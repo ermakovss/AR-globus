@@ -1,4 +1,19 @@
-<model-viewer src="Globus.glb" ar ar-modes="webxr scene-viewer quick-look" camera-controls environment-image="neutral" poster="poster.webp" shadow-intensity="1">
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="main.css">
+	<meta name="viewport" content="width=device-width">
+	<script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+</head>
+<body>
+<section class="model">
+	<div class="container">
+		<div class="model_inner">
+			<div class="model_object">
+				<div class="model_title">Глобус</div>
+<model-viewer src="Globus.glb" ar ar-modes="scene-viewer webxr quick-look" camera-controls environment-image="neutral" poster="poster.webp" shadow-intensity="1">
 
     <div class="progress-bar hide" slot="progress-bar">
         <div class="update-bar"></div>
@@ -10,3 +25,14 @@
         <img src="https://modelviewer.dev/shared-assets/icons/hand.png">
     </div>
 </model-viewer>
+
+			</div>
+			<div class="model_info">
+				<div class="model_specific">Используется для смотрения нашей земли</div>
+			</div>
+		</div>
+	</div>	
+</section>
+	
+</body>
+</html>
